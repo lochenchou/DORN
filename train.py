@@ -98,7 +98,7 @@ for epoch in range(EPOCHS):
     
     train_one_epoch(device, train_loader, model, train_dir, ord_loss, optimizer, epoch, logger, PRINT_FREQ, BETA=BETA, GAMMA=GAMMA, ORD_NUM=80.0)  
     
-    validation(device, val_loader, model, ord_loss, val_dir, epoch, logger, PRINT_FREQ, BETA=BETA, GAMMA=GAMME, ORD_NUM=80.0)
+    validation(device, val_loader, model, ord_loss, val_dir, epoch, logger, PRINT_FREQ, BETA=BETA, GAMMA=GAMMA, ORD_NUM=80.0)
     
     # save model and checkpoint per epoch
     checkpoint_filename = os.path.join(output_dir, 'checkpoint-{}.pth.tar'.format(str(epoch)))
